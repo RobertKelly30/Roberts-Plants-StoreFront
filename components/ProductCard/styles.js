@@ -4,6 +4,9 @@ const ProductCardStyles = styled.aside`
   max-width: 360px; 
   align-self: stretch;
   padding: 3rem 2rem;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
 `;
 
 const ProductImage = styled.div`
@@ -40,7 +43,7 @@ const ProductDescription = styled.p`
 
 const ProductIcons = styled.footer`
   display: flex;
-  justify-content: end;
+  justify-content: center;
   margin-top: 1.5rem;
 `;
  

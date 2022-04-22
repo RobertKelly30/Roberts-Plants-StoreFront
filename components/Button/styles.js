@@ -1,13 +1,22 @@
 import styled from "styled-components";
 
-const ButtonStyles = styled.button`
-      width:fit-content;
-      border:none;
-      background-color: transparent;
-      border-radius: 3px;
-      padding: 0.5rem 1rem;
-      color:#9ca3af;
-      box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+const Button = styled.button`
+  background-color: ${(props) => props.bc || "transparent"};
+  border: ${(props) => props.border || "none"};
+  border-radius: ${(props) => props.radius || "3px"};
+  margin: ${(props) => props.margin || "0"};
+  box-shadow: 0 0 3px 1px rgb(220, 220, 220);
+  padding: ${(props) => props.padding || "0.25rem 1.5rem"};
+  color: ${(props) => props.color || "grey"};
+  font-size: ${(props) => props.fs || "1rem"};
+  width: ${(props) => props.width || "100%"};
 `;
 
-export { ButtonStyles }
+const SubmitButton = styled(Button)`
+  background-color: ${(props) => props.bgcolor || "forestgreen"};
+  color: ${(props) => props.color || "#f8fafc"};
+  font-weight: ${(props) => props.fw || "700"};
+  font-size: ${(props) => props.fs || "14px"};
+`;
+
+export { Button, SubmitButton }

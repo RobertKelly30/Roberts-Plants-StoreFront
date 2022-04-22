@@ -6,16 +6,16 @@ const PageTitleStyles = styled.header`
 `;
 
 const Title = styled.h1`
-  font-size: clamp(4rem, 10vw, 10rem);
-  font-weight: 800;
-  color:#1e293b;
+  font-size: clamp(4rem, 10vw, 6rem);
+  font-weight: 600;
+  color:black;
   line-height: 1;
 `;
 
 const Description = styled.p`
   font-size: clamp(1rem, 4vw, 2rem);
-  font-weight: 600;
-  color:#94a3b8;
+  font-weight: 400;
+  color:black;
 `;
 
 export {PageTitleStyles, Title, Description}

@@ -1,5 +1,7 @@
 import { loadStripe } from "@stripe/stripe-js";
 
+import { MainStyles } from '../styles/styles'
+
 import { PageTitle } from "../components/PageTitle"
 import { ProductCard } from "../components/ProductCard"
 
@@ -12,9 +14,9 @@ export default function Home(props) {
   return (
     <>
       <PageTitle title="Robert's Plants Store Font" tagline="Let's grow together"/>
-      <main>
+      <MainStyles>
         { products.map(product=> <ProductCard key={product.uid} product={product}/>) }
-      </main>
+      </MainStyles>
 
     </>
   )

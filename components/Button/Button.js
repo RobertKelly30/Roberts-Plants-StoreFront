@@ -1,13 +1,13 @@
 import React from 'react';
 
-import {ButtonStyles} from './styles'
+import { SubmitButton} from './styles'
 
 function Button ({children, label, ...props})  {
   return (
-        <ButtonStyles {...props}>  
+        <SubmitButton {...props}>  
            {label}     
            {children}
-        </ButtonStyles>
+        </SubmitButton>
   )
 }
 

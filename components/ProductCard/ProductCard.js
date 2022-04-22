@@ -23,7 +23,7 @@ function ProductPreview ({children, product, ...props})  {
             {productDescription}
          </ProductDescription>
          <ProductIcons>
-            <form action="#" method="POST">
+            <form action="/api/checkout" method="POST">
                <input type="hidden" name="uid" value={uid}/>
                <Button width="250%" type="submit">Buy</Button>
             </form> 

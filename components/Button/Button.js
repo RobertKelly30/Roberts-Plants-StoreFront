@@ -1,13 +1,15 @@
 import React from 'react';
 
-import Styles from './styles.module.css'
+import {ButtonStyles} from './styles'
 
-function Button ({children, ...props})  {
+function Button ({children, label, ...props})  {
   return (
-        <button className={Styles.button}>
+        <ButtonStyles {...props}>  
+           {label}     
            {children}
-        </button>
+        </ButtonStyles>
   )
 }
 
 export default Button
+ 

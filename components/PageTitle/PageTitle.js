@@ -1,14 +1,17 @@
 import React from 'react';
 
-import styles from './styles.module.css'
+import {PageTitleStyles, Title, Description} from './styles'
+ 
 
-function PageTitle ({children, title, tagline, ...props})  {
+function PageTitle ( {children, title, tagline, ...props})  {
   return (
-        <header className={styles.pageTitle}>
-          <h1>{title || "uiTitle"}</h1>
-          <p>{tagline || "uiTagline"}</p>
-        </header>
+        <PageTitleStyles>
+          <Title>{title || "uiTitle"}</Title>
+          <Description>{tagline || "uiTagline"}</Description>          
+        </PageTitleStyles>
   )
 }
 
 export default PageTitle
+
+   

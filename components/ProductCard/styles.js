@@ -38,7 +38,7 @@ const ProductDescription = styled.p`
   color:#94a3b8;
 `;
 
-const ProductIcons = styled.div`
+const ProductIcons = styled.footer`
   display: flex;
   justify-content: end;
   margin-top: 1.5rem;

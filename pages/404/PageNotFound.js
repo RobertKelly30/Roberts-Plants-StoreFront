@@ -2,7 +2,7 @@ import React from "react";
 
 import Link from "next/link";
 
-import { Brand } from 'components/branding/'
+import { Brand } from '../../components/branding/'
 import { PageNotFoundPageStyles } from "./styles"
 
 function PageNotFound (props){
